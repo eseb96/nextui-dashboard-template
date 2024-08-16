@@ -8,6 +8,7 @@ import { BalanceIcon } from "../icons/sidebar/balance-icon";
 import { AccountsIcon } from "../icons/sidebar/accounts-icon";
 import { CustomersIcon } from "../icons/sidebar/customers-icon";
 import { ProductsIcon } from "../icons/sidebar/products-icon";
+import { TrademarksIcon } from "../icons/sidebar/trademarks-icon";
 import { ReportsIcon } from "../icons/sidebar/reports-icon";
 import { DevIcon } from "../icons/sidebar/dev-icon";
 import { ViewIcon } from "../icons/sidebar/view-icon";
@@ -48,9 +49,14 @@ export const SidebarWrapper = () => {
             <SidebarMenu title="Main Menu">
               <SidebarItem
                 isActive={pathname === "/accounts"}
-                title="Accounts"
+                title="Clients"
                 icon={<AccountsIcon />}
                 href="accounts"
+              />
+              <SidebarItem
+                isActive={pathname === "/trademarks"}
+                title="Trademark"
+                icon={<TrademarksIcon />}
               />
               <SidebarItem
                 isActive={pathname === "/payments"}

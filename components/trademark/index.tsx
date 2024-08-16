@@ -42,11 +42,8 @@ export const Accounts = () => {
               input: "w-full",
               mainWrapper: "w-full",
             }}
-            placeholder="Search clients"
+            placeholder="Search users"
           />
-          <Button color="primary">
-            Search
-          </Button>
           <SettingsIcon />
           <TrashIcon />
           <InfoIcon />
